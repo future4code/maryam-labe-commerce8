@@ -7,11 +7,11 @@ function App() {
     <div className='container'>
 
       <header className="header">
-        header
+        
       </header>
 
       <main className='main'>
-        main
+        
       </main>
 
       <footer >
