@@ -42,15 +42,15 @@ export class CommerceFilter extends React.Component{
     render(){
         return <DivFilter>
             <h3>Filtros</h3>
-            <LabelPadding for='valor-minimo'>Valor mínimo</LabelPadding>
-            <InputValor name='valor-minimo' type='number'min='0' max='999' value={this.state.valorMinimo} onChange={this.changeValorMinimo}/>
+            <LabelPadding htmlFor='valor-minimo'>Valor mínimo</LabelPadding>
+            <InputValor name='valor-minimo' type='number' min='0' value={this.state.valorMinimo} onChange={this.changeValorMinimo}/>
 
-            <LabelPadding for='valor-maximo'>Valor máximo</LabelPadding>
-            <InputValor name='valor-maximo' type='number' type='number'min='0' max='999' value={this.state.valorMaximo} onChange={this.changeValorMaximo}/> 
+            <LabelPadding htmlFor='valor-maximo'>Valor máximo</LabelPadding>
+            <InputValor name='valor-maximo' type='number' min='0' value={this.state.valorMaximo} onChange={this.changeValorMaximo}/> 
 
-            <LabelPadding for='pesquisa-nome'>Busca por nome</LabelPadding>
-            <InputValor name='pesquisa-nome' type='text' value={this.state.nomePesquisado} value={this.state.nomePesquisado} onChange={this.changePesquisaNome}/>
-            <ButtonTeste onClick={this.imprimirInfos}>teste</ButtonTeste>
+            <LabelPadding htmlFor='pesquisa-nome'>Busca por nome</LabelPadding>
+            <InputValor name='pesquisa-nome' type='text' value={this.state.nomePesquisado} onChange={this.changePesquisaNome}/>
+            <ButtonTeste onClick={this.imprimirInfos}>{this.props.texto}</ButtonTeste>
         </DivFilter>
     }
 }
