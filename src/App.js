@@ -1,6 +1,5 @@
 import React from 'react';
-import './App..css'
-import Footer from './Components/CommerceFooter/ComemrceFooter'
+
 
 function App() {
   return (
@@ -17,8 +16,11 @@ function App() {
       <footer >
         <Footer />
       </footer>
+
+
     </div>
   );
 }
 
 export default App;
+
